@@ -84,7 +84,7 @@ class _HttpApiState extends State<Belajar> {
                             children: [
                               Text(
                                 item['title'],
-                                maxLines: 1,
+                                maxLines: 1,  
                                 overflow: TextOverflow.ellipsis,
                                 style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                               ),
