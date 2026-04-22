@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
             Text("",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
           ],
         ),
-        nextScreen: const ProductListScreen(),
+        nextScreen: const Belajar(),
         splashIconSize: 200,
         backgroundColor: Colors.white,
         duration: 3000, // durasi 3 detik
