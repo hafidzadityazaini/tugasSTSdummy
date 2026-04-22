@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         nextScreen: const Belajar(),
         splashIconSize: 200,
         backgroundColor: Colors.white,
-        duration: 3000, // durasi 3 detik
+        duration: 3000, 
         splashTransition: SplashTransition.fadeTransition,
       ),
     );

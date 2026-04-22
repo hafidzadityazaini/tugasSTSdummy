@@ -28,8 +28,8 @@ class _HttpApiState extends State<Belajar> {
 
   @override
   void initState() {
-    super.initState();
-    ambilData();
+  super.initState();
+  ambilData();
   }
 
   @override
@@ -50,10 +50,10 @@ class _HttpApiState extends State<Belajar> {
               padding: const EdgeInsets.all(10.0),
               child: GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2, // Menampilkan 2 kolom seperti di gambar
+                  crossAxisCount: 2, 
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
-                  childAspectRatio: 0.75, // Mengatur rasio tinggi kartu
+                  childAspectRatio: 0.75, 
                 ),
                 itemCount: data.length,
                 itemBuilder: (context, index) {
@@ -66,12 +66,11 @@ class _HttpApiState extends State<Belajar> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Foto Produk
                         Expanded(
                           child: ClipRRect(
                             borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
                             child: Image.network(
-                              item['thumbnail'], // Menggunakan thumbnail agar lebih ringan
+                              item['thumbnail'], 
                               width: double.infinity,
                               fit: BoxFit.cover,
                             ),
@@ -83,7 +82,6 @@ class _HttpApiState extends State<Belajar> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              // Nama Produk
                               Text(
                                 item['title'],
                                 maxLines: 1,
@@ -93,7 +91,6 @@ class _HttpApiState extends State<Belajar> {
                               
                               const SizedBox(height: 4),
                               
-                              // Rating Produk
                               Row(
                                 children: [
                                   const Icon(Icons.star, color: Colors.amber, size: 14),
@@ -106,8 +103,7 @@ class _HttpApiState extends State<Belajar> {
                               ),
                               
                               const SizedBox(height: 8),
-                              
-                              // Harga dan Stok
+
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
